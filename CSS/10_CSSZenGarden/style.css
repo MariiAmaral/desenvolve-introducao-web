@@ -1,0 +1,202 @@
+
+.supporting footer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.benefits {
+    display: flex;
+    border-top: #3e4631 solid 1px;
+    border-bottom: #3e4631 solid 1px;
+}
+
+.benefits h3 {
+    order: 2;
+    align-self: center;
+    flex-basis: 30%;
+}
+
+.benefits p {
+    flex-basis: 70%;
+}
+
+.participation {
+    display: flex;
+    flex-wrap: wrap;
+    border-top: #3e4631 solid 1px;
+}
+
+.participation h3, .participation p {
+    order: 2;
+    flex-basis: 50%;
+}
+.participation h3 {
+    align-self: center;
+}
+
+.page-wrapper {
+    width: 80%;
+    max-width: 1280px;
+    margin: auto;
+    background-color: rgba(200, 230, 200, 0.8);
+    padding: 20px 40px;
+    position: relative;
+}
+
+aside ul {
+    list-style-type: none;
+}
+
+aside ul li {
+    margin: 1em;
+    text-align: center;
+}
+
+.main footer {
+    margin: 4%;
+}
+
+.main footer a {
+    border: solid 2px #3e4631;
+    padding: 0.5em;
+    display: inline-block;
+}
+
+.explanation {
+    width: 60%;
+    margin-right: 35%;
+    border-right: #3e4631 solid 1px;
+    padding-right: 2%;
+}       
+
+#design-selection {
+    position: absolute;
+    top: 480px;
+    left: 62%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.design-selection li {
+    border-top: #3e4631 solid 1px ;
+    padding-top: 5px;
+}
+
+.design-selection li:last-of-type {
+    border-bottom: #3e4631 solid 1px ;
+    padding-bottom:5px ;
+}
+
+#zen-intro {
+    height: 550px;
+}       
+
+#design-archives {
+    display: none;
+}       
+
+#zen-intro header {
+    background-color: #3e4631;
+    color: white;
+}
+
+#zen-intro header h1,
+#zen-intro header h2 {
+    display: inline-block;
+}
+
+#zen-intro header h1 {
+    margin-left: 1em; 
+    margin-right: 1em;
+}
+
+
+html {
+    background: url("JardimEncantado.jpg");
+    color: #3e4631;
+    font-size: 18px;
+    font-family:'Nunito', sans-serif;
+
+}
+
+p{
+    text-indent: 1em;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+h1{font-size: 1.8rem;}
+h2{font-size: 1.4rem;} 
+h3{font-size: 1.2rem; }     
+
+.main p:first-of-type::first-letter{
+    font-size: 2.5em;
+    font-family: 'times new roman', serif;
+    float: left
+}
+.summary{text-align: right;}
+.main p {line-height: 1.5;}
+
+abbr{font-variant: small-caps ;}
+
+a {
+    color: #ef09cc;
+}
+
+a:hover {
+    color: #24011f;
+}
+
+
+ @media screen and (max-width: 768px) {
+    .design-selection {
+        position: relative;
+        width: 100%;
+        margin-top: 20px;
+        left: 0;
+        top: auto;
+    }
+
+    .explanation {
+        width: 100%;
+        float: none;
+        margin-right: 0;
+        padding-right: 0;
+        border: none;
+    }
+    .benefits, .participation {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .intro {
+        height: auto;
+    }
+
+    p {
+        text-indent: 0;
+    }
+}
+@media print{
+    html {
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    #zen-intro header {
+        background-color: #fbfcfd;
+        color: #3e4631;
+    }
+
+   #design-selection {
+        position: static;
+        width: 100%;
+    }
+
+    .explanation {
+        width: 100%;
+        border-right: none;
+    }
+
+}
